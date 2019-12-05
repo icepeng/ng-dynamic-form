@@ -37,7 +37,9 @@ export class AppComponent {
     },
   ];
 
+  value: any;
+
   onSubmit(value) {
-    console.log(value);
+    this.value = value;
   }
 }
