@@ -1,0 +1,9 @@
+<form [formGroup]="group">
+  <ng-container
+    *ngFor="let field of config.children"
+    appDynamicField
+    [config]="field"
+    [group]="childGroup"
+  >
+  </ng-container>
+</form>

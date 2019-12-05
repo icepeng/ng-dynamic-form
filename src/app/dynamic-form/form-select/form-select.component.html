@@ -1,0 +1,10 @@
+<div [formGroup]="group">
+  <mat-form-field floatLabel="always">
+    <mat-label>{{ config.label }}</mat-label>
+    <mat-select [formControlName]="config.name">
+      <mat-option [value]="option" *ngFor="let option of config.options">{{
+        option
+      }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

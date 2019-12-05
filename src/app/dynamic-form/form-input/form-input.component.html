@@ -1,0 +1,10 @@
+<div [formGroup]="group">
+  <mat-form-field floatLabel="always">
+    <mat-label>{{ config.label }}</mat-label>
+    <input
+      type="text"
+      matInput
+      [formControlName]="config.name"
+    />
+  </mat-form-field>
+</div>

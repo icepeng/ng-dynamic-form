@@ -1,0 +1,10 @@
+<form [formGroup]="form">
+  <ng-container
+    *ngFor="let field of config"
+    appDynamicField
+    [config]="field"
+    [group]="form"
+  >
+  </ng-container>
+  <button mat-button color="primary" (click)="submitted.emit(form.value)">Submit</button>
+</form>
